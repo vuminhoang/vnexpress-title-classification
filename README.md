@@ -19,6 +19,12 @@ This dataset was kindly provided by one of my teachers at HUS, Mr. Nguyen Tuan A
 - Described in title_cls_train.ipynb file.
 
 ## Demo
-Check out my demo at: https://huggingface.co/spaces/minnehwg/vnexpress-title-classification (seems like it died, i'll create a new version soon!
-Or streamlit run app.py
+Check out my demo at: https://huggingface.co/spaces/minnehwg/vnexpress-title-classification (seems like it died, i'll create a new version soon!)
+
+```bash
+git clone https://github.com/vuminhoang/vnexpress-title-classification.git
+cd vnexpress-title-classification
+pip install -r requirements.txt
+streamlit run app.py
+```
   
