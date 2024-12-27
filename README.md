@@ -1,6 +1,13 @@
 ## VnExpress Title Classification
-This repository was created to classify headlines from VnExpress, a famous newspaper in Vietnam, into 8 different labels, including: "Sức Khỏe" (health), "Giáo Dục" (Education), "Thể Thao" (Sport), "Pháp Luật" (Law),
-"Khoa Học" (Science), "Du Lịch" (Travel), "Giải Trí" (Entertainment), "Kinh Doanh" (Business).
+This repository was created to classify headlines from VnExpress, a famous newspaper in Vietnam, into 8 different labels, including: 
+- "Sức Khỏe" (health)
+- "Giáo Dục" (Education)
+- "Thể Thao" (Sport)
+- "Pháp Luật" (Law)
+"Khoa Học" (Science)
+"Du Lịch" (Travel)
+"Giải Trí" (Entertainment)
+"Kinh Doanh" (Business)
 
 ## Data Collection
 - Crawl on the Vnexpress website
@@ -12,6 +19,6 @@ This dataset was kindly provided by one of my teachers at HUS, Mr. Nguyen Tuan A
 - Described in title_cls_train.ipynb file.
 
 ## Demo
-Check out my demo at: https://huggingface.co/spaces/minnehwg/vnexpress-title-classification
+Check out my demo at: https://huggingface.co/spaces/minnehwg/vnexpress-title-classification (seems like it died, i'll create a new version soon!
 Or streamlit run app.py
   
