@@ -27,4 +27,13 @@ cd vnexpress-title-classification
 pip install -r requirements.txt
 streamlit run app.py
 ```
+
+## 🚀 Near-future Plans
+
+- [ ] Create a pytorch version.
+- [ ] Convert it to onnx, compare the speed and accuracy between the 2 versions.
+- [ ] Build Flask App.
+- [ ] Build a dockerfile: the main purpose is to learn how to use docker to package product.
+
+
   
