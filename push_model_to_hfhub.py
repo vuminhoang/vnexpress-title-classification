@@ -1,6 +1,7 @@
 import tensorflow as tf
 from transformers import TFAutoModelForSequenceClassification, AutoTokenizer
 
+# -------------------------GUIDE--------------------------------------------------------
 '''
 Run these commands on terminal:
 pip install huggingface-hub
@@ -17,7 +18,10 @@ huggingface-cli login
 # # create a repo on huggingface hub, and push your model
 # model.push_to_hub("minnehwg/vnexpress-title-classification")
 
-# check it out!
+# ---------------------------------------------------------------------------------------
+# CHECK IT OUT!
+
+# label matching function
 def convert_label_to_title(label):
   convert_dict = {
     0: "SỨC KHỎE",
@@ -31,9 +35,12 @@ def convert_label_to_title(label):
   }
   return convert_dict[label]
 
+# define checkpoint, model, tokenizer
 checkpoint = 'minnehwg/vnexpress-title-classification'
 model = TFAutoModelForSequenceClassification.from_pretrained(checkpoint)
 tokenizer = AutoTokenizer.from_pretrained('distilbert-base-multilingual-cased')
+
+# predict function
 def predict_sentence(model, tokenizer, sentence):
     input_data = tokenizer(sentence, return_tensors='tf', padding=True, truncation=True)
     logits = model(input_data['input_ids'], attention_mask=input_data['attention_mask']).logits
@@ -43,6 +50,7 @@ def predict_sentence(model, tokenizer, sentence):
     title = convert_label_to_title(predicted_class)
     return title, probabilities.numpy(), highest_probability
 
+# -----------------TEST---------------------------------------------------------------------------
 sentence  = "Trấn Thành là MC số 1 của Vieon"
 title, probabilities, highest = predict_sentence(model, tokenizer, sentence)
 print(f"Tiêu đề cần dự đoán: {sentence}")
