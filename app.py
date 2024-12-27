@@ -33,14 +33,17 @@ def load_model(checkpoint, num_class):
 
 checkpoint = 'distilbert-base-multilingual-cased'
 model, tokenizer = load_model(checkpoint, 8)
-model.load_weights('best_model_weights.h5')
+model.load_weights('model/title_classification_weights.h5')
 
 text = st.text_area('Nhập tiêu đề vào đây')
 
-if text:
-    title, probabilities, highest = predict_sentence(model, tokenizer, text)
-    out = {
-        'title': title,
-        'prob': f"{highest * 100:.2f}%"
-    }
-    st.json(out)
+if st.button('Dự đoán'):
+    if text:
+        title, probabilities, highest = predict_sentence(model, tokenizer, text)
+        out = {
+            'title': title,
+            'prob': f"{highest * 100:.2f}%"
+        }
+        st.json(out)
+    else:
+        st.warning("Vui lòng nhập tiêu đề trước khi dự đoán.")
