@@ -41,6 +41,6 @@ if text:
     title, probabilities, highest = predict_sentence(model, tokenizer, text)
     out = {
         'title': title,
-        'prob': highest
+        'prob': f"{highest * 100:.2f}%"
     }
     st.json(out)
