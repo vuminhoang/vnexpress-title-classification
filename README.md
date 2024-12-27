@@ -4,10 +4,10 @@ This repository was created to classify headlines from VnExpress, a famous newsp
 - "Giáo Dục" (Education)
 - "Thể Thao" (Sport)
 - "Pháp Luật" (Law)
-"Khoa Học" (Science)
-"Du Lịch" (Travel)
-"Giải Trí" (Entertainment)
-"Kinh Doanh" (Business)
+- "Khoa Học" (Science)
+- "Du Lịch" (Travel)
+- "Giải Trí" (Entertainment)
+- "Kinh Doanh" (Business)
 
 ## Data Collection
 - Crawl on the Vnexpress website
