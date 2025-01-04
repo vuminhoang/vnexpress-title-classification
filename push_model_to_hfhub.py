@@ -60,3 +60,5 @@ print(f"Xác suất dự đoán: {highest}")
 # Tiêu đề cần dự đoán: Trấn Thành là MC số 1 của Vieon
 # Danh mục dự đoán: GIẢI TRÍ
 # Xác suất dự đoán: 0.8793759346008301
+
+
