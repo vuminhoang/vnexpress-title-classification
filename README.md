@@ -9,6 +9,9 @@ This repository was created to classify headlines from VnExpress, a famous newsp
 - "Giải Trí" (Entertainment)
 - "Kinh Doanh" (Business)
 
+## Newest update
+- a demo on google colab with pyngrok and flask, check it out!. Date: 23/1/2025.
+
 ## Data Collection
 - Crawl on the Vnexpress website.
 - Or u can use my data in raw_data folder.
@@ -29,7 +32,7 @@ streamlit run app.py
 ```
 
 ## 🚀 Near-future Plans
-
+- [x] Create demo on colab with pyngrok + flask!
 - [ ] Create a pytorch version.
 - [ ] Convert it to onnx, compare the speed and accuracy between the 2 versions.
 - [ ] Build Flask App.
